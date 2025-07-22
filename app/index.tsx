@@ -1,6 +1,6 @@
-import { Text, View, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export const screenOptions = {
   headerShown: false,
@@ -27,13 +27,13 @@ export default function Index() {
       }}
     >
       <Text style={{ color: "#0D0F13", fontSize: 36, fontWeight: 700, textAlign: "center", marginBottom: 34, paddingHorizontal: 20 }}>
-        Say hello to your new app
+        Hello!, Please Choose Log-in or Sign-up
       </Text>
 
       <TouchableOpacity
         onPress={() => navigation.navigate("Login")}
         style={{
-          backgroundColor: "#1B1F26",
+          backgroundColor: "#2e86de",
           paddingVertical: 10,
           paddingHorizontal: 40,
           borderRadius: 8,
@@ -45,7 +45,7 @@ export default function Index() {
       <TouchableOpacity
         onPress={() => navigation.navigate("SignUp")}
         style={{
-          backgroundColor: "#899BC1",
+          backgroundColor: "#e81d0e",
           paddingVertical: 10,
           paddingHorizontal: 30,
           borderRadius: 8,
